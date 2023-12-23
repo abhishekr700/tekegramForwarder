@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  telegram-forwarder:
+    build: .
+    environment:
+      TG_API_ID: ${TG_API_ID}
+      TG_API_HASH: ${TG_API_ID}
+      MAIN_GRP: ${MAIN_GRP}
+      TEST_GRP: ${TEST_GRP}
+      FWD_GRP: ${FWD_GRP}
+      TEST_DM: ${TEST_DM}
