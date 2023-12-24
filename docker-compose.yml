@@ -1,6 +1,7 @@
 version: "3.9"
 services:
   telegram-forwarder:
+    container_name: telegramForwarder
     build: .
     environment:
       TG_API_ID: ${TG_API_ID}
