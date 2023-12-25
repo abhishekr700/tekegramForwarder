@@ -3,6 +3,7 @@ services:
   telegram-forwarder:
     container_name: telegramForwarder
     build: .
+    restart: unless-stopped
     environment:
       TG_API_ID: ${TG_API_ID}
       TG_API_HASH: ${TG_API_ID}
